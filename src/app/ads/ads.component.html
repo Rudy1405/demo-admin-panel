@@ -1,0 +1,234 @@
+<div class="ads-container">
+    <ngb-alert *ngIf="showAlert" [type]="alertType" (close)="close()"> Funcionalidad: se muestra una pagina que permite agregar un nuevo anuncio con su informacion </ngb-alert>
+    <button type="button"
+            (click)="showmsg()"
+            style="margin-left: 700px; margin-top: 30px;"
+            class="btn btn-primary btn-circle btn-md"
+            placement="left"
+            ngbTooltip="Agrega un nuevo anuncio">+
+    </button>
+
+<br>
+<br>
+
+  <div style="max-height: 6500px;" class="pre-scrollable">
+    <div id="ads-cards" >
+        <div id="cards">
+            <div class="row">
+                <div class="card">
+                  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 card">
+                    <div class="card-body">
+                        <div class="dropdown">
+                            <!-- three dots -->
+                            <ul class="dropbtn icons btn-right showLeft" placement="left"
+                            ngbPopover="Editar \  Eliminar" popoverTitle="Opciones">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                      <h5 class="card-title">Anuncio 01</h5>
+                      <hr style="
+                      border-top: 3px solid rgba(0,0,0,.1);
+                      width: 100%;
+                      margin-top: 1px;
+                      margin-bottom: 20px;">
+                      <p class="card-text">Nombre:: Lorem ipsum dolor sit amet</p>
+                      <p class="card-text">Ubicación:: ipsum dolor sit amet</p>
+                    </div>
+                  </div>
+                </div>
+                <!--Dummy data for make 3 cards per row-->
+                <div class="card">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 card">
+                      <div class="card-body">
+                          <div class="dropdown">
+                              <!-- three dots -->
+                              <ul class="dropbtn icons btn-right showLeft">
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>
+                              </ul>
+                          </div>
+                        <h5 class="card-title">Anuncio 02</h5>
+                        <hr style="
+                        border-top: 3px solid rgba(0,0,0,.1);
+                        width: 100%;
+                        margin-top: 1px;
+                        margin-bottom: 20px;">
+                        <p class="card-text">Nombre:: Lorem ipsum dolor sit amet</p>
+                        <p class="card-text">Ubicación:: ipsum dolor sit amet</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card">
+                      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 card">
+                        <div class="card-body">
+                            <div class="dropdown">
+                                <!-- three dots -->
+                                <ul class="dropbtn icons btn-right showLeft">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                          <h5 class="card-title">Anuncio 03</h5>
+                          <hr style="
+                          border-top: 3px solid rgba(0,0,0,.1);
+                          width: 100%;
+                          margin-top: 1px;
+                          margin-bottom: 20px;">
+                          <p class="card-text">Nombre:: Lorem ipsum dolor sit amet</p>
+                          <p class="card-text">Ubicación:: ipsum dolor sit amet</p>
+                        </div>
+                      </div>
+                </div>
+                <!--Dummy data -->
+            </div>
+            <!-- extra rows just for show-->
+            <div class="row">
+                <div class="card">
+                  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 card">
+                    <div class="card-body">
+                        <div class="dropdown">
+                            <!-- three dots -->
+                            <ul class="dropbtn icons btn-right showLeft">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                      <h5 class="card-title">Anuncio 04</h5>
+                      <hr style="
+                      border-top: 3px solid rgba(0,0,0,.1);
+                      width: 100%;
+                      margin-top: 1px;
+                      margin-bottom: 20px;">
+                      <p class="card-text">Nombre:: Lorem ipsum dolor sit amet</p>
+                      <p class="card-text">Ubicación:: ipsum dolor sit amet</p>
+                    </div>
+                  </div>
+                </div>
+                <!--Dummy data for make 3 cards per row-->
+                <div class="card">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 card">
+                      <div class="card-body">
+                          <div class="dropdown">
+                              <!-- three dots -->
+                              <ul class="dropbtn icons btn-right showLeft">
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>
+                              </ul>
+                          </div>
+                        <h5 class="card-title">Anuncio 05</h5>
+                        <hr style="
+                        border-top: 3px solid rgba(0,0,0,.1);
+                        width: 100%;
+                        margin-top: 1px;
+                        margin-bottom: 20px;">
+                        <p class="card-text">Nombre:: Lorem ipsum dolor sit amet</p>
+                        <p class="card-text">Ubicación:: ipsum dolor sit amet</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card">
+                      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 card">
+                        <div class="card-body">
+                            <div class="dropdown">
+                                <!-- three dots -->
+                                <ul class="dropbtn icons btn-right showLeft">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                          <h5 class="card-title">Anuncio 06</h5>
+                          <hr style="
+                          border-top: 3px solid rgba(0,0,0,.1);
+                          width: 100%;
+                          margin-top: 1px;
+                          margin-bottom: 20px;">
+                          <p class="card-text">Nombre:: Lorem ipsum dolor sit amet</p>
+                          <p class="card-text">Ubicación:: ipsum dolor sit amet</p>
+                        </div>
+                      </div>
+                </div>
+                <!--Dummy data -->
+            </div>
+            <div class="row">
+                <div class="card">
+                  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 card">
+                    <div class="card-body">
+                        <div class="dropdown">
+                            <!-- three dots -->
+                            <ul class="dropbtn icons btn-right showLeft">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                      <h5 class="card-title">Anuncio 07</h5>
+                      <hr style="
+                      border-top: 3px solid rgba(0,0,0,.1);
+                      width: 100%;
+                      margin-top: 1px;
+                      margin-bottom: 20px;">
+                      <p class="card-text">Nombre:: Lorem ipsum dolor sit amet</p>
+                      <p class="card-text">Ubicación:: ipsum dolor sit amet</p>
+                    </div>
+                  </div>
+                </div>
+                <!--Dummy data for make 3 cards per row-->
+                <div class="card">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 card">
+                      <div class="card-body">
+                          <div class="dropdown">
+                              <!-- three dots -->
+                              <ul class="dropbtn icons btn-right showLeft">
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>
+                              </ul>
+                          </div>
+                        <h5 class="card-title">Anuncio 08</h5>
+                        <hr style="
+                        border-top: 3px solid rgba(0,0,0,.1);
+                        width: 100%;
+                        margin-top: 1px;
+                        margin-bottom: 20px;">
+                        <p class="card-text">Nombre:: Lorem ipsum dolor sit amet</p>
+                        <p class="card-text">Ubicación:: ipsum dolor sit amet</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card">
+                      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 card">
+                        <div class="card-body">
+                            <div class="dropdown">
+                                <!-- three dots -->
+                                <ul class="dropbtn icons btn-right showLeft">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                          <h5 class="card-title">Anuncio 09</h5>
+                          <hr style="
+                          border-top: 3px solid rgba(0,0,0,.1);
+                          width: 100%;
+                          margin-top: 1px;
+                          margin-bottom: 20px;">
+                          <p class="card-text">Nombre:: Lorem ipsum dolor sit amet</p>
+                          <p class="card-text">Ubicación:: ipsum dolor sit amet</p>
+                        </div>
+                      </div>
+                </div>
+                <!--Dummy data -->
+            </div>
+            <!-- extra rows just for show-->
+        </div>
+    </div>
+  </div>
+
+</div>

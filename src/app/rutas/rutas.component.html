@@ -1,0 +1,400 @@
+<div class="bus-container">
+    <ngb-alert *ngIf="showAlert" [type]="alertType" (close)="close()"> Funcionalidad: se muestra una pagina que permite agregar una nueva Ruta con su informacion </ngb-alert>
+    <button type="button"
+            (click)="showmsg()"
+            style="margin-left: 700px; margin-top: 30px;"
+            class="btn btn-primary btn-circle btn-md"
+            placement="left"
+            ngbTooltip="Agrega una nueva Ruta">+
+    </button>
+
+<br>
+<br>
+
+  <div style="max-height: 240px;" class="pre-scrollable">
+    <div id="bus-cards" >
+        <section name="bus-title">
+            <h2>Ruta  55</h2>
+        </section>
+        <br>
+        <div id="cards">
+            <div class="row">
+                <div class="card">
+                  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 card">
+                    <div class="card-body">
+                        <div class="dropdown">
+                            <!-- three dots -->
+                            <ul class="dropbtn icons btn-right showLeft" placement="top"
+                            ngbPopover="Editar \  Eliminar" popoverTitle="Opciones">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                      <h5 class="card-title">Unidad 81</h5>
+                      <hr style="
+                      border-top: 3px solid rgba(0,0,0,.1);
+                      width: 100%;
+                      margin-top: 1px;
+                      margin-bottom: 20px;">
+                      <p class="card-text">Info1: Lorem ipsum dolor sit amet</p>
+                      <p class="card-text">Info2: ipsum dolor sit amet</p>
+                    </div>
+                  </div>
+                </div>
+                <!--Dummy data for make 3 cards per row-->
+                <div class="card">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 card">
+                      <div class="card-body">
+                          <div class="dropdown">
+                              <!-- three dots -->
+                              <ul class="dropbtn icons btn-right showLeft">
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>
+                              </ul>
+                          </div>
+                        <h5 class="card-title">Unidad 72</h5>
+                        <hr style="
+                        border-top: 3px solid rgba(0,0,0,.1);
+                        width: 100%;
+                        margin-top: 1px;
+                        margin-bottom: 20px;">
+                        <p class="card-text">Info1: Lorem ipsum dolor sit amet</p>
+                        <p class="card-text">Info2: ipsum dolor sit amet</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card">
+                      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 card">
+                        <div class="card-body">
+                            <div class="dropdown">
+                                <!-- three dots -->
+                                <ul class="dropbtn icons btn-right showLeft">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                          <h5 class="card-title">Unidad 62</h5>
+                          <hr style="
+                          border-top: 3px solid rgba(0,0,0,.1);
+                          width: 100%;
+                          margin-top: 1px;
+                          margin-bottom: 20px;">
+                          <p class="card-text">Info1: Lorem ipsum dolor sit amet</p>
+                          <p class="card-text">Info2: ipsum dolor sit amet</p>
+                        </div>
+                      </div>
+                </div>
+                <!--Dummy data -->
+            </div>
+            <!-- extra rows just for show-->
+            <div class="row">
+                <div class="card">
+                  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 card">
+                    <div class="card-body">
+                        <div class="dropdown">
+                            <!-- three dots -->
+                            <ul class="dropbtn icons btn-right showLeft">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                      <h5 class="card-title">Unidad 378</h5>
+                      <hr style="
+                      border-top: 3px solid rgba(0,0,0,.1);
+                      width: 100%;
+                      margin-top: 1px;
+                      margin-bottom: 20px;">
+                      <p class="card-text">Info1: Lorem ipsum dolor sit amet</p>
+                      <p class="card-text">Info2: ipsum dolor sit amet</p>
+                    </div>
+                  </div>
+                </div>
+                <!--Dummy data for make 3 cards per row-->
+                <div class="card">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 card">
+                      <div class="card-body">
+                          <div class="dropdown">
+                              <!-- three dots -->
+                              <ul class="dropbtn icons btn-right showLeft">
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>
+                              </ul>
+                          </div>
+                        <h5 class="card-title">Unidad 88</h5>
+                        <hr style="
+                        border-top: 3px solid rgba(0,0,0,.1);
+                        width: 100%;
+                        margin-top: 1px;
+                        margin-bottom: 20px;">
+                        <p class="card-text">Info1: Lorem ipsum dolor sit amet</p>
+                        <p class="card-text">Info2: ipsum dolor sit amet</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card">
+                      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 card">
+                        <div class="card-body">
+                            <div class="dropdown">
+                                <!-- three dots -->
+                                <ul class="dropbtn icons btn-right showLeft">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                          <h5 class="card-title">Unidad 12</h5>
+                          <hr style="
+                          border-top: 3px solid rgba(0,0,0,.1);
+                          width: 100%;
+                          margin-top: 1px;
+                          margin-bottom: 20px;">
+                          <p class="card-text">Info1: Lorem ipsum dolor sit amet</p>
+                          <p class="card-text">Info2: ipsum dolor sit amet</p>
+                        </div>
+                      </div>
+                </div>
+                <!--Dummy data -->
+            </div>
+            <div class="row">
+                <div class="card">
+                  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 card">
+                    <div class="card-body">
+                        <div class="dropdown">
+                            <!-- three dots -->
+                            <ul class="dropbtn icons btn-right showLeft">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                      <h5 class="card-title">Unidad 19</h5>
+                      <hr style="
+                      border-top: 3px solid rgba(0,0,0,.1);
+                      width: 100%;
+                      margin-top: 1px;
+                      margin-bottom: 20px;">
+                      <p class="card-text">Info1: Lorem ipsum dolor sit amet</p>
+                      <p class="card-text">Info2: ipsum dolor sit amet</p>
+                    </div>
+                  </div>
+                </div>
+                <!--Dummy data for make 3 cards per row-->
+                <div class="card">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 card">
+                      <div class="card-body">
+                          <div class="dropdown">
+                              <!-- three dots -->
+                              <ul class="dropbtn icons btn-right showLeft">
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>
+                              </ul>
+                          </div>
+                        <h5 class="card-title">Unidad 33</h5>
+                        <hr style="
+                        border-top: 3px solid rgba(0,0,0,.1);
+                        width: 100%;
+                        margin-top: 1px;
+                        margin-bottom: 20px;">
+                        <p class="card-text">Info1: Lorem ipsum dolor sit amet</p>
+                        <p class="card-text">Info2: ipsum dolor sit amet</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card">
+                      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 card">
+                        <div class="card-body">
+                            <div class="dropdown">
+                                <!-- three dots -->
+                                <ul class="dropbtn icons btn-right showLeft">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                          <h5 class="card-title">Unidad 92</h5>
+                          <hr style="
+                          border-top: 3px solid rgba(0,0,0,.1);
+                          width: 100%;
+                          margin-top: 1px;
+                          margin-bottom: 20px;">
+                          <p class="card-text">Info1: Lorem ipsum dolor sit amet</p>
+                          <p class="card-text">Info2: ipsum dolor sit amet</p>
+                        </div>
+                      </div>
+                </div>
+                <!--Dummy data -->
+            </div>
+            <!-- extra rows just for show-->
+        </div>
+    </div>
+  </div>
+<!--Dummy data for create more rows, this should be a ng for -->
+  <div style="max-height: 240px;" class="pre-scrollable">
+      <div id="bus-cards" >
+          <section name="bus-title">
+              <h2>Ruta  Azteca</h2>
+          </section>
+          <br>
+          <div id="cards">
+              <div class="row">
+                  <div class="card">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 card">
+                      <div class="card-body">
+                          <div class="dropdown">
+                              <!-- three dots -->
+                              <ul class="dropbtn icons btn-right showLeft">
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>
+                              </ul>
+                          </div>
+                        <h5 class="card-title">Unidad 02</h5>
+                        <hr style="
+                        border-top: 3px solid rgba(0,0,0,.1);
+                        width: 100%;
+                        margin-top: 1px;
+                        margin-bottom: 20px;">
+                        <p class="card-text">Info1: Lorem ipsum dolor sit amet</p>
+                        <p class="card-text">Info2: ipsum dolor sit amet</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Dummy data for make 3 cards per row-->
+                  <div class="card">
+                      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 card">
+                        <div class="card-body">
+                            <div class="dropdown">
+                                <!-- three dots -->
+                                <ul class="dropbtn icons btn-right showLeft">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                          <h5 class="card-title">Unidad 03</h5>
+                          <hr style="
+                          border-top: 3px solid rgba(0,0,0,.1);
+                          width: 100%;
+                          margin-top: 1px;
+                          margin-bottom: 20px;">
+                          <p class="card-text">Info1: Lorem ipsum dolor sit amet</p>
+                          <p class="card-text">Info2: ipsum dolor sit amet</p>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="card">
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 card">
+                          <div class="card-body">
+                              <div class="dropdown">
+                                  <!-- three dots -->
+                                  <ul class="dropbtn icons btn-right showLeft">
+                                      <li></li>
+                                      <li></li>
+                                      <li></li>
+                                  </ul>
+                              </div>
+                            <h5 class="card-title">Unidad 05</h5>
+                            <hr style="
+                            border-top: 3px solid rgba(0,0,0,.1);
+                            width: 100%;
+                            margin-top: 1px;
+                            margin-bottom: 20px;">
+                            <p class="card-text">Info1: Lorem ipsum dolor sit amet</p>
+                            <p class="card-text">Info2: ipsum dolor sit amet</p>
+                          </div>
+                        </div>
+                  </div>
+                  <!--Dummy data -->
+                </div>
+          </div>
+      </div>
+  </div>
+  <div style="max-height: 240px;" class="pre-scrollable">
+      <div id="bus-cards" >
+          <section name="bus-title">
+              <h2>Ruta  88</h2>
+          </section>
+          <br>
+          <div id="cards">
+              <div class="row">
+                  <div class="card">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 card">
+                      <div class="card-body">
+                          <div class="dropdown">
+                              <!-- three dots -->
+                              <ul class="dropbtn icons btn-right showLeft">
+                                  <li></li>
+                                  <li></li>
+                                  <li></li>
+                              </ul>
+                          </div>
+                        <h5 class="card-title">Unidad 88</h5>
+                        <hr style="
+                        border-top: 3px solid rgba(0,0,0,.1);
+                        width: 100%;
+                        margin-top: 1px;
+                        margin-bottom: 20px;">
+                        <p class="card-text">Info1: Lorem ipsum dolor sit amet</p>
+                        <p class="card-text">Info2: ipsum dolor sit amet</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Dummy data for make 3 cards per row-->
+                  <div class="card">
+                      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 card">
+                        <div class="card-body">
+                            <div class="dropdown">
+                                <!-- three dots -->
+                                <ul class="dropbtn icons btn-right showLeft">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                          <h5 class="card-title">Unidad 38</h5>
+                          <hr style="
+                          border-top: 3px solid rgba(0,0,0,.1);
+                          width: 100%;
+                          margin-top: 1px;
+                          margin-bottom: 20px;">
+                          <p class="card-text">Info1: Lorem ipsum dolor sit amet</p>
+                          <p class="card-text">Info2: ipsum dolor sit amet</p>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="card">
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 card">
+                          <div class="card-body">
+                              <div class="dropdown">
+                                  <!-- three dots -->
+                                  <ul class="dropbtn icons btn-right showLeft">
+                                      <li></li>
+                                      <li></li>
+                                      <li></li>
+                                  </ul>
+                              </div>
+                            <h5 class="card-title">Unidad 06</h5>
+                            <hr style="
+                            border-top: 3px solid rgba(0,0,0,.1);
+                            width: 100%;
+                            margin-top: 1px;
+                            margin-bottom: 20px;">
+                            <p class="card-text">Info1: Lorem ipsum dolor sit amet</p>
+                            <p class="card-text">Info2: ipsum dolor sit amet</p>
+                          </div>
+                        </div>
+                  </div>
+                  <!--Dummy data -->
+                </div>
+          </div>
+      </div>
+  </div>
+<!--Dummy data -->
+
+</div>

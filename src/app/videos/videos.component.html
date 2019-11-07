@@ -1,0 +1,44 @@
+<div class=container>
+
+  <ngb-alert *ngIf="showAlert" [type]="alertType" (close)="close()"> Funcionalidad: se muestra la opcion de subir un video </ngb-alert>
+
+  <div class="row">
+    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+      <h1 style="text-align: center; margin-top: 10px;" >  Agregar Video </h1>
+      <div class="upload-box">
+          <button type="button"
+          (click)="showmsg()"
+          style="margin-left: 115px; margin-top: 150px;"
+          class="btn btn-primary btn-circle btn-md"
+          placement="left"
+          ngbTooltip="Agrega un nuevo video">+
+          </button>
+      </div>
+    </div>
+    <div class="vl"></div>
+    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+      <p style="text-align: center; margin-top: 10px;"> Lista de videos </p>
+      <div style="max-height: 650px; max-width: 800px; width: fit-content;" class="pre-scrollable">
+          <table class="table table-striped">
+              <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">url</th>
+                <th scope="col"></th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr *ngFor="let video of videos; index as i">
+                <th scope="row">{{ i + 1 }}</th>
+                <td>{{ video.name }}</td>
+                <td>{{ video.url}}</td>
+                <td> <button class="btn btn-danger"> Eliminar </button> </td>
+              </tr>
+              </tbody>
+          </table>
+      </div>
+    </div>
+  </div>
+
+</div>
